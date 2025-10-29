@@ -50,8 +50,6 @@ Astro Cactus is a simple opinionated starter built with [Astro](https://astro.bu
 
 
 
-
-
 Check out the [Demo](https://astro-cactus.chriswilliams.dev/), hosted on Netlify
 
 ## Quick start
