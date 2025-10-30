@@ -29,16 +29,16 @@ export const siteConfig: SiteConfig = {
 // These are your navigation menu links - you can customize these too!
 export const menuLinks: { path: string; title: string }[] = [
 	{
-		path: "/",
+		path: "/kastkan/",
 		title: "Home",
 	},
 	{
-		path: "/about/",
-		title: "About",
+		path: "/kastkan/research/",
+		title: "Research",
 	},
 	{
-		path: "/research/",
-		title: "Research",
+		path: "/kastkan/figures/",
+		title: "Favorite Figures",
 	},
 ];
 
