@@ -1,0 +1,50 @@
+---
+import PageLayout from "@/layouts/Base.astro";
+---
+
+<PageLayout meta={{ title: "Favorite Figures" }}>
+	<div class="w-full">
+		<h1 class="title mb-12 text-5xl">Favorite Figures</h1>
+
+		<div class="mb-12">
+			<p class="mb-4">
+				This space is my attempt to replicate figures from famous economics papers that have shaped
+				how I think about development and data. Some of these visualizations are by replication (to
+				test and learn).
+			</p>
+			<p class="mb-4">
+				Each replication includes the original source and, where possible, links to data and code.
+			</p>
+			<p class="mb-4">
+				Think of this as a living gallery of economics through visualization.
+			</p>
+		</div>
+
+		<div class="space-y-16">
+			<!-- Example Figure 1 -->
+			<article class="border-b border-gray-300 pb-12">
+				<h2 class="mb-4 text-2xl font-semibold">Figure Title</h2>
+				<div class="mb-6">
+					<img
+						src="/figures/figure1.png"
+						alt="Description of figure"
+						class="w-full rounded-lg shadow-lg"
+					/>
+				</div>
+				<div class="space-y-3">
+					<p>
+						Brief explanation of what this figure shows and why it's interesting or important...
+					</p>
+					<p class="text-sm">
+						<strong>Source:</strong> Author(s). (Year). "Paper Title". <em>Journal Name</em>.
+					</p>
+					<div class="flex gap-4 text-sm">
+						<a href="#" class="text-accent hover:underline" target="_blank">Original Paper</a>
+						<a href="#" class="text-accent hover:underline" target="_blank">Replication Code</a>
+						<a href="#" class="text-accent hover:underline" target="_blank">Data</a>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
+</PageLayout>
