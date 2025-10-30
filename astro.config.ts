@@ -23,10 +23,10 @@ import { expressiveCodeOptions, siteConfig } from "./src/site.config";
 export default defineConfig({
 	site: siteConfig.url,
 	base: '/kastkan',
-	image: {
-		service: { entrypoint: 'astro/assets/services/noop' },
-		domains: ["webmention.io"],
-	},
+image: {
+	domains: ["webmention.io"],
+	service: { entrypoint: 'astro/assets/services/noop' },
+},
 	integrations: [
 		expressiveCode(expressiveCodeOptions),
 		icon(),
