@@ -22,7 +22,9 @@ import { expressiveCodeOptions, siteConfig } from "./src/site.config";
 // https://astro.build/config
 export default defineConfig({
 	site: siteConfig.url,
+	base: '/kastkan',
 	image: {
+		service: { entrypoint: 'astro/assets/services/noop' },
 		domains: ["webmention.io"],
 	},
 	integrations: [
