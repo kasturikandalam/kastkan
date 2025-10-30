@@ -65,7 +65,6 @@ image: { service: { entrypoint: "astro/assets/services/noop" } },
 function rawFonts(ext: string[]) {
   return {
     name: "vite-plugin-raw-fonts",
-    // @ts-expect-error:next-line
     transform(_: unknown, id: string) {
       if (ext.some((e) => id.endsWith(e))) {
         const buffer = fs.readFileSync(id);
