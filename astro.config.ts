@@ -24,8 +24,7 @@ export default defineConfig({
   base: "/kastkan",
 
   // Disable Astro image optimization so Sharp is never required
-  image: { service: { entry: "astro/assets/services/noop" } },
-
+image: { service: { entrypoint: "astro/assets/services/noop" } },
   integrations: [
     expressiveCode(expressiveCodeOptions),
     icon(),
