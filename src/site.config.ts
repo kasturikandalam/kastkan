@@ -15,7 +15,7 @@ export const siteConfig: SiteConfig = {
 	},
 	
 	// Change this to your description
-	description: "I am Kasturi Kandalam, a Pre-Doc at Indian Statistical Institute - Delhi (ISI-D). I study how data, policy and people interact— sometimes beautifully, sometimes not. I build and analyse large administrative and spatial datasets and use them to understand how the world works. p.s. I have a soft spot for messy data.",  // ← Added comma here!
+	description: "I am Kasturi Kandalam, a Pre-Doc at Indian Statistical Institute - Delhi (ISI-D). I study how data, policy and people interact— sometimes beautifully, sometimes not. I build and analyse large administrative and spatial datasets and use them to understand how the world works. p.s. I have a soft spot for messy data.", 
 	lang: "en-GB",
 	ogLocale: "en_GB",
 	
