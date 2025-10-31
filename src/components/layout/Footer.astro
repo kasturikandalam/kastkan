@@ -5,16 +5,11 @@ const year = new Date().getFullYear();
 ---
 
 <footer
-	class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top font-semibold text-gray-600 sm:flex-row sm:justify-between sm:text-xs dark:text-gray-400"
+	class="mt-auto flex w-full flex-row items-center justify-center gap-x-4 pt-20 pb-4 text-center font-semibold text-gray-600 sm:justify-between sm:text-xs dark:text-gray-400"
 >
-	<div class="me-0 sm:me-4">
-		&copy; {siteConfig.author}
-		{year}.<span class="inline-block">&nbsp;🌻&nbsp;{siteConfig.title}</span>
-		<span class="block sm:inline-block mt-1 sm:mt-0 sm:ml-2">
-			<a href="mailto:kasturiveemohan@gmail.com" class="hover:text-global-text hover:underline">
-				kasturiveemohan@gmail.com
-			</a>
-		</span>
+	<div class="flex items-center gap-x-2">
+		&copy; <a href="mailto:kasturiveemohan@gmail.com" class="hover:text-global-text underline">{siteConfig.author}</a>
+		{year}.<span class="inline-flex items-center">&nbsp;🌻&nbsp;{siteConfig.title}</span>
 	</div>
 	<nav
 		aria-labelledby="footer_links"
@@ -26,7 +21,7 @@ const year = new Date().getFullYear();
 				<a class="hover:text-global-text px-4 py-2 hover:underline sm:py-0" href={link.path}>
 					{link.title}
 				</a>
-			)) 
+			))
 		}
 	</nav>
 </footer>
