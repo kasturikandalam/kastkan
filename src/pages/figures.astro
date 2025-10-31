@@ -21,7 +21,40 @@ import PageLayout from "@/layouts/Base.astro";
 		</div>
 
 		<div class="space-y-16">
-			<!-- Example Figure 1 -->
+			<!-- NREGS Running Variable Manipulation Test -->
+			<article class="border-b border-gray-300 pb-12">
+				<h2 class="mb-4 text-2xl font-semibold">Testing for Running Variable Manipulation in NREGS Phase Allocation</h2>
+				<div class="mb-6">
+					<img
+						src="/kastkan/unmanipulated_runningvar.png"
+						alt="Distribution of Planning Commission Index over Backwardness Ranks"
+						class="w-full rounded-lg shadow-lg"
+					/>
+					<p class="mt-2 text-sm text-gray-500 italic">
+						General Distribution of Planning Commission Index over Backwardness Ranks
+					</p>
+				</div>
+				<div class="space-y-3">
+					<p>
+						This figure demonstrates a crucial requirement for Fuzzy Regression Discontinuity Design (FRDD): the running variable must be unmanipulable by treatment recipients. The smooth distribution shows that districts couldn't strategically manipulate their backwardness scores to secure earlier NREGS phase allocation.
+					</p>
+					<p>
+						<strong>Why this matters:</strong> The normalized rank variable is based on the Planning Commission's Backwardness Index published in 2003, using data from NSS 50th (1993-1994) and 55th (1999-2000) rounds—collected years before NREGS was conceived in 2006. Districts had no foresight to strategically misreport information in the 1990s for a program that wouldn't exist until a decade later.
+					</p>
+					<p>
+						The smooth, continuous distribution—without bunching or gaps near phase cutoffs—provides visual evidence against manipulation. This institutional and empirical evidence establishes that the running variable was predetermined and exogenous to treatment assignment.
+					</p>
+					<p class="text-sm">
+						<strong>Source:</strong> Replication of Figure 2 from Zimmermann, L. (2014). "Why Guarantee Employment? Evidence from a Large Indian Public-Works Program". Working Paper.
+					</p>
+					<div class="flex gap-4 text-sm">
+						<a href="https://www.atlantafed.org/-/media/documents/news/conferences/2014/SIDE-workshop/papers/Zimmermann.pdf" class="text-accent hover:underline" target="_blank" rel="noopener noreferrer">Original Paper</a>
+						<a href="https://github.com/kasturikandalam/nregs-migration" class="text-accent hover:underline" target="_blank" rel="noopener noreferrer">My Code & Data</a>
+					</div>
+				</div>
+			</article>
+
+			<!-- Example Figure 1 - Keep as template 
 			<article class="border-b border-gray-300 pb-12">
 				<h2 class="mb-4 text-2xl font-semibold">Figure Title</h2>
 				<div class="mb-6">
@@ -44,7 +77,7 @@ import PageLayout from "@/layouts/Base.astro";
 						<a href="#" class="text-accent hover:underline" target="_blank">Data</a>
 					</div>
 				</div>
-			</article>
+			</article> -->
 		</div>
 	</div>
 </PageLayout>
