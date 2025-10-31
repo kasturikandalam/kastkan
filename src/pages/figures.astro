@@ -6,78 +6,89 @@ import PageLayout from "@/layouts/Base.astro";
 	<div class="w-full">
 		<h1 class="title mb-12 text-5xl">Favorite Figures</h1>
 
-		<div class="mb-12">
-			<p class="mb-4">
+		<div class="mb-12 pb-8 border-b border-gray-600">
+			<p class="mb-4 text-base">
 				This space is my ongoing experiment in learning by doing — an attempt to recreate figures from economics papers 
                 that have shaped how I think about development and data. Some are full replications, others just visual exercises 
                 to test an idea or method.
 			</p>
-			<p class="mb-4">
+			<p class="mb-4 text-base">
 				Each figure credits the original source and, where possible, links to data and code.
 			</p>
-			<p class="mb-4">
+			<p class="mb-4 text-base">
 				Think of it as a small, evolving gallery of economics.
 			</p>
 		</div>
 
-		<div class="space-y-16">
+		<div class="space-y-4">
 			<!-- NREGS Running Variable Manipulation Test -->
-			<article class="border-b border-gray-300 pb-12">
-				<h2 class="mb-4 text-2xl font-semibold">Testing for Running Variable Manipulation in NREGS Phase Allocation</h2>
-				<div class="mb-6">
-					<img
-						src="/kastkan/unmanipulated_runningvar.png"
-						alt="Distribution of Planning Commission Index over Backwardness Ranks"
-						class="w-full rounded-lg shadow-lg"
-					/>
-					<p class="mt-2 text-sm text-gray-500 italic">
-						General Distribution of Planning Commission Index over Backwardness Ranks
-					</p>
-				</div>
-				<div class="space-y-3">
-					<p>
-						This figure demonstrates a crucial requirement for Fuzzy Regression Discontinuity Design (FRDD): the running variable must be unmanipulable by treatment recipients. The smooth distribution shows that districts couldn't strategically manipulate their backwardness scores to secure earlier NREGS phase allocation.
-					</p>
-					<p>
-						<strong>Why this matters:</strong> The normalized rank variable is based on the Planning Commission's Backwardness Index published in 2003, using data from NSS 50th (1993-1994) and 55th (1999-2000) rounds—collected years before NREGS was conceived in 2006. Districts had no foresight to strategically misreport information in the 1990s for a program that wouldn't exist until a decade later.
-					</p>
-					<p>
-						The smooth, continuous distribution—without bunching or gaps near phase cutoffs—provides visual evidence against manipulation. This institutional and empirical evidence establishes that the running variable was predetermined and exogenous to treatment assignment.
-					</p>
-					<p class="text-sm">
-						<strong>Source:</strong> Replication of Figure 2 from Zimmermann, L. (2014). "Why Guarantee Employment? Evidence from a Large Indian Public-Works Program". Working Paper.
-					</p>
-					<div class="flex gap-4 text-sm">
-						<a href="https://www.atlantafed.org/-/media/documents/news/conferences/2014/SIDE-workshop/papers/Zimmermann.pdf" class="text-accent hover:underline" target="_blank" rel="noopener noreferrer">Original Paper</a>
-						<a href="https://github.com/kasturikandalam/nregs-migration" class="text-accent hover:underline" target="_blank" rel="noopener noreferrer">My Code & Data</a>
+			<details class="group border border-gray-700 rounded-lg">
+				<summary class="cursor-pointer p-6 hover:bg-gray-800/50 transition-colors">
+					<h2 class="inline text-xl font-semibold">Testing for Running Variable Manipulation in NREGS Phase Allocation</h2>
+					<span class="float-right transform transition-transform group-open:rotate-180">▼</span>
+				</summary>
+				<div class="px-6 pb-6 space-y-6">
+					<div class="mb-6">
+						<img
+							src="/kastkan/unmanipulated_runningvar.png"
+							alt="Distribution of Planning Commission Index over Backwardness Ranks"
+							class="w-full rounded-lg shadow-lg"
+						/>
+						<p class="mt-2 text-sm text-gray-400 italic">
+							General Distribution of Planning Commission Index over Backwardness Ranks
+						</p>
+					</div>
+					<div class="space-y-4 text-base">
+						<p>
+							This figure replicates Figure 2 from Zimmermann (2012) and illustrates an essential diagnostic for Fuzzy Regression Discontinuity Designs (FRDDs): the running variable must be exogenous to treatment assignment and unmanipulable by those who might benefit from it.
+						</p>
+						<p>
+							<strong>Why this matters:</strong> In the context of the National Rural Employment Guarantee Scheme (NREGS), districts were phased into the program based on their Backwardness Rank, derived from the Planning Commission's Backwardness Index (2003). The index itself was constructed using data from the NSS 50th (1993–94) and 55th (1999–2000) rounds—collected well before NREGS was enacted in 2006. Consequently, districts had neither the foresight nor the incentive to strategically misreport indicators used to generate these backwardness scores.
+						</p>
+						<p>
+							The smooth, monotonic relationship between the Three-Parameter Index and Backwardness Rank (shown below) provides both institutional and empirical reassurance that the running variable was not subject to manipulation. There is no bunching or discontinuity near program thresholds, supporting the assumption that phase assignment was determined by predetermined characteristics rather than endogenous behavior.
+						</p>
+						<p class="text-sm text-gray-400">
+							<strong>Source:</strong> Replication of Figure 2 from Zimmermann, Laura V, 2012. Zimmermann, L. V. (2024). Why guarantee employment? Evidence from a large Indian public-works program. Economic Development and Cultural Change, 72(4), 2031-2067.
+						</p>
+						<div class="flex gap-4 text-sm">
+							<a href="https://www.atlantafed.org/-/media/documents/news/conferences/2014/SIDE-workshop/papers/Zimmermann.pdf" class="text-accent hover:underline" target="_blank" rel="noopener noreferrer">Original Paper</a>
+							<a href="https://github.com/kasturikandalam/nregs-migration" class="text-accent hover:underline" target="_blank" rel="noopener noreferrer">My Code & Data</a>
+						</div>
 					</div>
 				</div>
-			</article>
+			</details>
 
-			<!-- Example Figure 1 - Keep as template 
-			<article class="border-b border-gray-300 pb-12">
-				<h2 class="mb-4 text-2xl font-semibold">Figure Title</h2>
-				<div class="mb-6">
-					<img
-						src="/figures/figure1.png"
-						alt="Description of figure"
-						class="w-full rounded-lg shadow-lg"
-					/>
-				</div>
-				<div class="space-y-3">
-					<p>
-						Brief explanation of what this figure shows and why it's interesting or important...
-					</p>
-					<p class="text-sm">
-						<strong>Source:</strong> Author(s). (Year). "Paper Title". <em>Journal Name</em>.
-					</p>
-					<div class="flex gap-4 text-sm">
-						<a href="#" class="text-accent hover:underline" target="_blank">Original Paper</a>
-						<a href="#" class="text-accent hover:underline" target="_blank">Replication Code</a>
-						<a href="#" class="text-accent hover:underline" target="_blank">Data</a>
+			<!-- Template for next figure - duplicate this structure -->
+			<!-- 
+			<details class="group border border-gray-700 rounded-lg">
+				<summary class="cursor-pointer p-6 hover:bg-gray-800/50 transition-colors">
+					<h2 class="inline text-xl font-semibold">Next Figure Title</h2>
+					<span class="float-right transform transition-transform group-open:rotate-180">▼</span>
+				</summary>
+				<div class="px-6 pb-6 space-y-6">
+					<div class="mb-6">
+						<img
+							src="/kastkan/figure2.png"
+							alt="Description"
+							class="w-full rounded-lg shadow-lg"
+						/>
+					</div>
+					<div class="space-y-4 text-base">
+						<p>
+							Description here...
+						</p>
+						<p class="text-sm text-gray-400">
+							<strong>Source:</strong> Citation here
+						</p>
+						<div class="flex gap-4 text-sm">
+							<a href="#" class="text-accent hover:underline" target="_blank">Original Paper</a>
+							<a href="#" class="text-accent hover:underline" target="_blank">My Code</a>
+						</div>
 					</div>
 				</div>
-			</article> -->
+			</details>
+			-->
 		</div>
 	</div>
 </PageLayout>
