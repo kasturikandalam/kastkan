@@ -17,4 +17,50 @@ import PageLayout from "@/layouts/Base.astro";
 		</p>
 		<SocialList />
 	</section>
+
+	<section class="mt-16">
+		<h2 class="title mb-6 text-2xl">Recent Work</h2>
+		<div class="space-y-4">
+			<article class="border border-gray-700 rounded-lg p-6 hover:border-accent transition-colors">
+				<h3 class="text-xl font-semibold mb-3">
+					<a href="https://github.com/kasturikandalam/osrm-travel-times" 
+					   class="hover:text-accent transition-colors" 
+					   target="_blank" 
+					   rel="noopener noreferrer">
+						OSRM Travel Time Tools →
+					</a>
+				</h3>
+				<p class="text-base mb-3 leading-relaxed">
+					Lightweight Python tools for computing road-network travel times and distances using the Open Source Routing Machine API. Supports both many-to-many accessibility matrices and pairwise origin-destination calculations—useful for measuring market access, migration costs, and spatial accessibility in development research.
+				</p>
+				<div class="flex flex-wrap gap-2">
+					<span class="text-xs px-2 py-1 rounded" style="background-color: rgba(100, 143, 216, 0.2); color: #648fd8;">API Integration</span>
+					<span class="text-xs px-2 py-1 rounded" style="background-color: rgba(100, 143, 216, 0.2); color: #648fd8;">Spatial Data</span>
+					<span class="text-xs px-2 py-1 rounded" style="background-color: rgba(100, 143, 216, 0.2); color: #648fd8;">Python</span>
+					<span class="text-xs px-2 py-1 rounded" style="background-color: rgba(100, 143, 216, 0.2); color: #648fd8;">Research Tools</span>
+				</div>
+			</article>
+
+			<!-- Template for future work - duplicate and uncomment when ready -->
+			<!-- 
+			<article class="border border-gray-700 rounded-lg p-6 hover:border-accent transition-colors">
+				<h3 class="text-xl font-semibold mb-3">
+					<a href="your-link-here" 
+					   class="hover:text-accent transition-colors" 
+					   target="_blank" 
+					   rel="noopener noreferrer">
+						Your Next Project Title →
+					</a>
+				</h3>
+				<p class="text-base mb-3 leading-relaxed">
+					Description of your next project...
+				</p>
+				<div class="flex flex-wrap gap-2">
+					<span class="text-xs px-2 py-1 rounded" style="background-color: rgba(100, 143, 216, 0.2); color: #648fd8;">Skill 1</span>
+					<span class="text-xs px-2 py-1 rounded" style="background-color: rgba(100, 143, 216, 0.2); color: #648fd8;">Skill 2</span>
+				</div>
+			</article>
+			-->
+		</div>
+	</section>
 </PageLayout>
