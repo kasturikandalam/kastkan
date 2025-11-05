@@ -17,6 +17,16 @@ const socialLinks: {
 		link: "https://github.com/kasturikandalam",
 		name: "mdi:github",
 	},
+	{
+		friendlyName: "LinkedIn",
+		link: "https://www.linkedin.com/in/kasturi-kandalam-3b3885148/",
+		name: "mdi:linkedin",
+	},
+	{
+		friendlyName: "Twitter",
+		link: "https://x.com/th0ughtcascades",
+		name: "mdi:twitter",
+	},
 ];
 ---
 
@@ -26,7 +36,7 @@ const socialLinks: {
 		{
 			socialLinks.map(({ friendlyName, isWebmention, link, name }) => (
 				<li class="flex">
-					<a
+					
 						class="hover:text-link inline-block"
 						href={link}
 						rel={`noreferrer ${isWebmention ? "me authn" : ""}`}
