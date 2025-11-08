@@ -1,132 +1,103 @@
 ---
-const title = "Research";
-const description = "Research in development economics, labor markets, and public policy";
-import PageLayout from "../layouts/PageLayout.astro";
+import PageLayout from "@/layouts/Base.astro";
 ---
 
-<PageLayout title={title} description={description}>
+<PageLayout meta={{ title: "Research", description: "Research in development economics, labor markets, and public policy" }}>
+	<section>
+		<h1 class="title mb-12">Research</h1>
 
-## Working Papers
+		<h2 class="title mb-6 text-2xl">Working Papers</h2>
 
-<div class="paper-entry">
+		<div class="paper-entry mb-12">
+			<h3 class="text-xl font-semibold mb-3">
+				Where have all the men gone? Temporary Migration & Rural Public Works - A Discontinuity Approach
+			</h3>
+			
+			<p class="font-medium text-gray-400 mb-4">Kasturi Kandalam</p>
 
-### Where have all the men gone? Temporary Migration & Rural Public Works - A Discontinuity Approach
+			<p class="mb-4 leading-relaxed">
+				This paper examines the impact of India's rural employment guarantee scheme (MGNREGA) on temporary male migration using a regression discontinuity design. Exploiting discontinuities in program implementation, I analyze how public works employment affects migration decisions in rural households.
+			</p>
 
-**Kasturi Kandalam**
+			<p class="mb-4 text-sm">
+				<strong>Keywords</strong>: Migration, MGNREGA, Public Works, Rural Development, India
+			</p>
 
-This paper examines the impact of India's rural employment guarantee scheme (MGNREGA) on temporary male migration using a regression discontinuity design. Exploiting discontinuities in program implementation, I analyze how public works employment affects migration decisions in rural households.
+			<div class="flex gap-4">
+				<a href="/kastkan/papers/migration_mgnrega_draft.pdf" 
+				   class="inline-flex items-center px-4 py-2 rounded transition-colors"
+				   style="background-color: rgba(100, 143, 216, 0.1);"
+				   target="_blank"
+				   rel="noopener noreferrer">
+					📄 Draft
+				</a>
+			</div>
+		</div>
 
-**Keywords**: Migration, MGNREGA, Public Works, Rural Development, India
+		<div class="paper-entry mb-12 pb-12 border-b border-gray-700">
+			<h3 class="text-xl font-semibold mb-3">
+				From Charminar to Cyberabad: Political Economy of Software Industry in Erstwhile Unified Andhra Pradesh
+			</h3>
 
-<div class="paper-links">
-  <a href="/kastkan/papers/migration_mgnrega_draft.pdf" class="paper-link">📄 Draft</a>
-</div>
+			<p class="font-medium text-gray-400 mb-4">Kasturi Kandalam</p>
 
-</div>
+			<p class="mb-4 leading-relaxed">
+				This study investigates the political economy factors that transformed Hyderabad from a traditional city into a major global IT hub. I examine the role of state policies, political leadership, and institutional changes in facilitating the emergence and growth of the software industry in Andhra Pradesh.
+			</p>
 
-<div class="paper-entry">
+			<p class="mb-4 text-sm">
+				<strong>Keywords</strong>: Software Industry, Political Economy, Andhra Pradesh, Hyderabad, Regional Development, India
+			</p>
 
-### From Charminar to Cyberabad: Political Economy of Software Industry in Erstwhile Unified Andhra Pradesh
+			<div class="flex gap-4">
+				<a href="/kastkan/papers/software_industry_ap_draft.pdf" 
+				   class="inline-flex items-center px-4 py-2 rounded transition-colors"
+				   style="background-color: rgba(100, 143, 216, 0.1);"
+				   target="_blank"
+				   rel="noopener noreferrer">
+					📄 Draft
+				</a>
+			</div>
+		</div>
 
-**Kasturi Kandalam**
+		<h2 class="title mb-6 text-2xl mt-16">Work in Progress</h2>
 
-This study investigates the political economy factors that transformed Hyderabad from a traditional city into a major global IT hub. I examine the role of state policies, political leadership, and institutional changes in facilitating the emergence and growth of the software industry in Andhra Pradesh.
+		<div class="wip-entry mb-12">
+			<h3 class="text-xl font-semibold mb-3">
+				Filling the gaps? Private sector response to the push and pull of the Indian public schooling system
+			</h3>
 
-**Keywords**: Software Industry, Political Economy, Andhra Pradesh, Hyderabad, Regional Development, India
+			<p class="font-medium text-gray-400 mb-4">
+				Kasturi Kandalam, Prashant Dewan, Sabyasachi Dey, Arnab Mukhopadhyay, and Soham Sahoo
+			</p>
 
-<div class="paper-links">
-  <a href="/kastkan/papers/software_industry_ap_draft.pdf" class="paper-link">📄 Draft</a>
-</div>
+			<p class="leading-relaxed">
+				We investigate how the private education sector responds to changes in public school quality and availability across India. Using state-level policy variations and household survey data, we analyze the dynamics between public and private schooling and their implications for educational equity and access.
+			</p>
+		</div>
 
-</div>
+		<div class="wip-entry mb-12 pb-12 border-b border-gray-700">
+			<h3 class="text-xl font-semibold mb-3">
+				Who Knows Best? (Dis)agreement on Reported Participation of Women in Intra-Household Decision-Making
+			</h3>
 
----
+			<p class="font-medium text-gray-400 mb-4">
+				Kasturi Kandalam and Rosa Abraham
+			</p>
 
-## Work in Progress
+			<p class="leading-relaxed">
+				This research examines discrepancies between spouses' reports on women's participation in household decision-making using nationally representative data from India. We document systematic patterns of disagreement across different types of decisions and explore their determinants and implications for measuring women's empowerment.
+			</p>
+		</div>
 
-<div class="wip-entry">
+		<h2 class="title mb-6 text-2xl mt-16">Research Interests</h2>
 
-### Filling the gaps? Private sector response to the push and pull of the Indian public schooling system
-
-**Kasturi Kandalam**, Prashant Dewan, Sabyasachi Dey, Arnab Mukhopadhyay, and Soham Sahoo
-
-We investigate how the private education sector responds to changes in public school quality and availability across India. Using state-level policy variations and household survey data, we analyze the dynamics between public and private schooling and their implications for educational equity and access.
-
-</div>
-
-<div class="wip-entry">
-
-### Who Knows Best? (Dis)agreement on Reported Participation of Women in Intra-Household Decision-Making
-
-**Kasturi Kandalam** and Rosa Abraham
-
-This research examines discrepancies between spouses' reports on women's participation in household decision-making using nationally representative data from India. We document systematic patterns of disagreement across different types of decisions and explore their determinants and implications for measuring women's empowerment.
-
-</div>
-
----
-
-## Research Interests
-
-- Development Economics
-- Labor Economics  
-- Public Policy & Governance
-- Gender & Household Economics
-- Political Economy
-
+		<ul class="list-disc list-inside space-y-2">
+			<li>Development Economics</li>
+			<li>Labor Economics</li>
+			<li>Public Policy & Governance</li>
+			<li>Gender & Household Economics</li>
+			<li>Political Economy</li>
+		</ul>
+	</section>
 </PageLayout>
-
-<style>
-  .paper-entry, .wip-entry {
-    margin-bottom: 3rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--theme-divider, #e5e7eb);
-  }
-
-  .paper-entry:last-of-type, .wip-entry:last-of-type {
-    border-bottom: none;
-  }
-
-  .paper-entry h3, .wip-entry h3 {
-    margin-bottom: 0.5rem;
-    font-size: 1.35rem;
-    line-height: 1.4;
-  }
-
-  .paper-entry p:first-of-type, .wip-entry p:first-of-type {
-    margin-top: 0.25rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
-    color: var(--theme-text-lighter, #6b7280);
-  }
-
-  .paper-links {
-    margin-top: 1rem;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .paper-link {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    background-color: var(--theme-accent-opacity, rgba(59, 130, 246, 0.1));
-    border-radius: 0.375rem;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.2s;
-  }
-
-  .paper-link:hover {
-    background-color: var(--theme-accent-opacity-hover, rgba(59, 130, 246, 0.2));
-    transform: translateY(-1px);
-  }
-
-  .wip-entry em {
-    display: block;
-    margin-top: 0.75rem;
-    font-size: 0.9rem;
-    color: var(--theme-text-lighter, #6b7280);
-  }
-</style>
