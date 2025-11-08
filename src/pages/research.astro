@@ -1,8 +1,10 @@
 ---
-title: "Research"
-description: "Research in development economics, labor markets, and public policy"
-layout: "../layouts/PageLayout.astro"
+const title = "Research";
+const description = "Research in development economics, labor markets, and public policy";
+import PageLayout from "../layouts/PageLayout.astro";
 ---
+
+<PageLayout title={title} description={description}>
 
 ## Working Papers
 
@@ -71,6 +73,8 @@ This research examines discrepancies between spouses' reports on women's partici
 - Public Policy & Governance
 - Gender & Household Economics
 - Political Economy
+
+</PageLayout>
 
 <style>
   .paper-entry, .wip-entry {
