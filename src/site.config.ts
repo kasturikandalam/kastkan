@@ -38,7 +38,7 @@ export const menuLinks: { path: string; title: string }[] = [
 	},
 	{
 		path: "/kastkan/figures/",
-		title: "Favorite Figures",
+		title: "Gallery",
 	},
 ];
 
