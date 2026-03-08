@@ -22,45 +22,6 @@ import PageLayout from "@/layouts/Base.astro";
              </p>
 		</div>
 
-		<div class="space-y-4">
-			<!-- NREGS Running Variable Manipulation Test -->
-			<details class="group border border-gray-700 rounded-lg">
-				<summary class="cursor-pointer p-6 hover:bg-gray-800/50 transition-colors flex items-center" style="list-style: none;">
-					<span class="transform transition-transform group-open:rotate-180 mr-4">▼</span>
-					<h2 class="text-xl font-semibold">Testing for Running Variable Manipulation in NREGS Phase Allocation</h2>
-				</summary>
-				<div class="px-6 pb-6 space-y-6">
-					<div class="mb-6">
-						<img
-							src="/kastkan/unmanipulated_runningvar.png"
-							alt="Distribution of Planning Commission Index over Backwardness Ranks"
-							class="w-full rounded-lg shadow-lg"
-						/>
-						<p class="mt-2 text-sm text-gray-400 italic">
-							My replication (left) & Figure 2 from Zimmermann (2024) (right): General Distribution of Planning Commission Index over Backwardness Ranks
-						</p>
-					</div>
-					<div class="space-y-4 text-base">
-						<p>
-							This figure replicates Figure 2 from Zimmermann (2024) and illustrates an essential diagnostic for Fuzzy Regression Discontinuity Designs (FRDDs): the running variable must be exogenous to treatment assignment and unmanipulable by those who might benefit from it.
-						</p>
-						<p>
-							<strong>Why this matters:</strong> In the context of the National Rural Employment Guarantee Scheme (NREGS), districts were phased into the program based on their Backwardness Rank, derived from the Planning Commission's Backwardness Index (2003). The index itself was constructed using data from the NSS 50th (1993–94) and 55th (1999–2000) rounds—collected well before NREGS was enacted in 2006. Consequently, districts had neither the foresight nor the incentive to manipulate the indicators underlying these scores. 
-							<!--strategically misreport indicators used to generate these backwardness scores. -->	
-						</p>
-						<p>
-                           The smooth, monotonic relationship between the Three-Parameter Index and Backwardness Rank provides both institutional and empirical reassurance that the running variable was not subject to manipulation. 
-                            <!--There is no bunching or discontinuity near program thresholds, supporting the assumption that phase assignment was determined by predetermined characteristics rather than endogenous behavior. -->						</p>
-						<p class="text-sm" style="color: #648fd8;">
-							<strong>Source:</strong> Replication of Figure 2 from Zimmermann, L. V. (2024). Why guarantee employment? Evidence from a large Indian public-works program. Economic Development and Cultural Change, 72(4), 2031-2067.
-						</p>
-						<div class="flex gap-4 text-sm">
-							<a href="https://www.aeaweb.org/conference/2015/retrieve.php?pdfid=2907&tk=TkiyG3R8" class="text-accent hover:underline" target="_blank" rel="noopener noreferrer">Original Paper</a>
-							<a href="https://github.com/kasturikandalam/nregs-migration" class="text-accent hover:underline" target="_blank" rel="noopener noreferrer">My Code & Data</a>
-						</div>
-					</div>
-				</div>
-			</details>
 
 
 			<!-- SARSONS | COAUTHORSHIP AND TENURE -->
@@ -113,6 +74,46 @@ import PageLayout from "@/layouts/Base.astro";
     </div>
 </details>
 			
+
+		<div class="space-y-4">
+			<!-- NREGS Running Variable Manipulation Test -->
+			<details class="group border border-gray-700 rounded-lg">
+				<summary class="cursor-pointer p-6 hover:bg-gray-800/50 transition-colors flex items-center" style="list-style: none;">
+					<span class="transform transition-transform group-open:rotate-180 mr-4">▼</span>
+					<h2 class="text-xl font-semibold">Testing for Running Variable Manipulation in NREGS Phase Allocation</h2>
+				</summary>
+				<div class="px-6 pb-6 space-y-6">
+					<div class="mb-6">
+						<img
+							src="/kastkan/unmanipulated_runningvar.png"
+							alt="Distribution of Planning Commission Index over Backwardness Ranks"
+							class="w-full rounded-lg shadow-lg"
+						/>
+						<p class="mt-2 text-sm text-gray-400 italic">
+							My replication (left) & Figure 2 from Zimmermann (2024) (right): General Distribution of Planning Commission Index over Backwardness Ranks
+						</p>
+					</div>
+					<div class="space-y-4 text-base">
+						<p>
+							This figure replicates Figure 2 from Zimmermann (2024) and illustrates an essential diagnostic for Fuzzy Regression Discontinuity Designs (FRDDs): the running variable must be exogenous to treatment assignment and unmanipulable by those who might benefit from it.
+						</p>
+						<p>
+							<strong>Why this matters:</strong> In the context of the National Rural Employment Guarantee Scheme (NREGS), districts were phased into the program based on their Backwardness Rank, derived from the Planning Commission's Backwardness Index (2003). The index itself was constructed using data from the NSS 50th (1993–94) and 55th (1999–2000) rounds—collected well before NREGS was enacted in 2006. Consequently, districts had neither the foresight nor the incentive to manipulate the indicators underlying these scores. 
+							<!--strategically misreport indicators used to generate these backwardness scores. -->	
+						</p>
+						<p>
+                           The smooth, monotonic relationship between the Three-Parameter Index and Backwardness Rank provides both institutional and empirical reassurance that the running variable was not subject to manipulation. 
+                            <!--There is no bunching or discontinuity near program thresholds, supporting the assumption that phase assignment was determined by predetermined characteristics rather than endogenous behavior. -->						</p>
+						<p class="text-sm" style="color: #648fd8;">
+							<strong>Source:</strong> Replication of Figure 2 from Zimmermann, L. V. (2024). Why guarantee employment? Evidence from a large Indian public-works program. Economic Development and Cultural Change, 72(4), 2031-2067.
+						</p>
+						<div class="flex gap-4 text-sm">
+							<a href="https://www.aeaweb.org/conference/2015/retrieve.php?pdfid=2907&tk=TkiyG3R8" class="text-accent hover:underline" target="_blank" rel="noopener noreferrer">Original Paper</a>
+							<a href="https://github.com/kasturikandalam/nregs-migration" class="text-accent hover:underline" target="_blank" rel="noopener noreferrer">My Code & Data</a>
+						</div>
+					</div>
+				</div>
+			</details>
 
 				<!-- Template for next figure - duplicate this structure 
 			 
