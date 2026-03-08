@@ -55,15 +55,67 @@ import PageLayout from "@/layouts/Base.astro";
 							<strong>Source:</strong> Replication of Figure 2 from Zimmermann, L. V. (2024). Why guarantee employment? Evidence from a large Indian public-works program. Economic Development and Cultural Change, 72(4), 2031-2067.
 						</p>
 						<div class="flex gap-4 text-sm">
-							<a href="https://www.atlantafed.org/-/media/documents/news/conferences/2014/SIDE-workshop/papers/Zimmermann.pdf" class="text-accent hover:underline" target="_blank" rel="noopener noreferrer">Original Paper</a>
+							<a href="https://www.aeaweb.org/conference/2015/retrieve.php?pdfid=2907&tk=TkiyG3R8" class="text-accent hover:underline" target="_blank" rel="noopener noreferrer">Original Paper</a>
 							<a href="https://github.com/kasturikandalam/nregs-migration" class="text-accent hover:underline" target="_blank" rel="noopener noreferrer">My Code & Data</a>
 						</div>
 					</div>
 				</div>
 			</details>
 
-			<!-- Template for next figure - duplicate this structure -->
-			<!-- 
+
+			<!-- SARSONS | COAUTHORSHIP AND TENURE -->
+			 
+<details class="group border border-gray-700 rounded-lg">
+    <summary class="cursor-pointer p-6 hover:bg-gray-800/50 transition-colors flex items-center" style="list-style: none;">
+        <span class="transform transition-transform group-open:rotate-180 mr-4">▼</span>
+        <h2 class="text-xl font-semibold">Coauthorship, Gender, and Tenure</h2>
+    </summary>
+    <div class="px-6 pb-6 space-y-6">
+        <div class="mb-6">
+            <img
+                src="/kastkan/figure2_replication.png"
+                alt="Binned scatterplot showing relationship between fraction of solo-authored papers and tenure probability, split by gender"
+                class="w-full rounded-lg shadow-lg"
+            />
+            <p class="text-sm italic mt-2" style="color: #888;">
+                My replication (above) & Figure 2 from Sarsons et al. (2021): Relationship between Paper Composition and Tenure, by Gender
+            </p>
+        </div>
+        <div class="space-y-4 text-base">
+            <p>
+                This figure replicates Figure 2 from Sarsons et al. (2021) and illustrates one of the paper's 
+                central findings: coauthorship translates into tenure very differently for men and women in academic economics.
+            </p>
+            <p>
+                The figure is a binned scatterplot of tenure against the fraction of papers that are solo-authored, 
+                split by gender, controlling for total papers, citations, journal quality, number of coauthors, 
+                and institution, year, and field fixed effects.
+            </p>
+            <p>
+                <strong>Why this matters:</strong> For men, paper composition is essentially irrelevant — tenure rates are flat 
+                regardless of whether they coauthor or solo author (β = −0.035, SE = 0.059). For women, the 
+                relationship is strongly positive (β = 0.406, SE = 0.131): women who solo author all their papers 
+                have tenure rates comparable to men, while women who coauthor all their papers face an 
+                approximately 37% tenure rate — far below that of comparable men. The paper argues this gap 
+                is best explained by gender influencing credit attribution for coauthored work: when individual 
+                contributions are unobservable, employers appear to systematically discount women's share of 
+                joint output relative to men's.
+            </p>
+            <p class="text-sm" style="color: #30a6d1;">
+                <strong>Source:</strong> Replication of Figure 2 from Sarsons, H., Gërxhani, K., Reuben, E., & Schram, A. (2021). 
+                Gender Differences in Recognition for Group Work. <em>Journal of Political Economy</em>, 129(1), 101–147.
+            </p>
+            <div class="flex gap-4 text-sm">
+                <a href="https://www.journals.uchicago.edu/doi/10.1086/711401" class="text-accent hover:underline" target="_blank">Original Paper</a>
+                <a href="#" class="text-accent hover:underline" target="_blank">My Code & Data</a>
+            </div>
+        </div>
+    </div>
+</details>
+			
+
+				<!-- Template for next figure - duplicate this structure 
+			 
 			<details class="group border border-gray-700 rounded-lg">
 				<summary class="cursor-pointer p-6 hover:bg-gray-800/50 transition-colors flex items-center" style="list-style: none;">
 					<span class="transform transition-transform group-open:rotate-180 mr-4">▼</span>
@@ -91,7 +143,7 @@ import PageLayout from "@/layouts/Base.astro";
 					</div>
 				</div>
 			</details>
-			-->
+		-->
 		</div>
 	</div>
 </PageLayout>
