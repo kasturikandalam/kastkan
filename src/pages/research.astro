@@ -7,55 +7,56 @@ import PageLayout from "@/layouts/Base.astro";
     <h1 class="title mb-8">Research</h1>
 
     <!-- Legend -->
-    <div class="flex gap-5 flex-wrap mb-10 text-xs" style="color:#888;">
-      <span class="flex items-center gap-2"><span style="width:8px;height:8px;border-radius:50%;background:#1D9E75;display:inline-block;"></span> Working papers</span>
-      <span class="flex items-center gap-2"><span style="width:8px;height:8px;border-radius:50%;background:#B4B2A9;display:inline-block;"></span> Work in progress</span>
-      <span class="flex items-center gap-2"><span style="width:8px;height:8px;border-radius:50%;background:#7F77DD;display:inline-block;"></span> Publication</span>
+    <div class="flex gap-5 flex-wrap mb-10 text-xs text-stone-400 dark:text-stone-600">
+      <span class="flex items-center gap-2"><span style="width:8px;height:8px;border-radius:50%;background:#2e7a5c;display:inline-block;"></span> Working papers</span>
+      <span class="flex items-center gap-2"><span style="width:8px;height:8px;border-radius:50%;background:#a0a098;display:inline-block;"></span> Work in progress</span>
+      <span class="flex items-center gap-2"><span style="width:8px;height:8px;border-radius:50%;background:#6a65b0;display:inline-block;"></span> Publication</span>
       <span class="flex items-center gap-2"><span style="width:8px;height:8px;border-radius:50%;background:#888780;display:inline-block;"></span> Other writing</span>
     </div>
 
     <!-- ── Working Papers ─────────────────────────────── -->
     <div class="flex items-center gap-3 mb-6">
-      <span class="text-[10px] font-medium tracking-widest uppercase whitespace-nowrap" style="color:#999;">Working Papers</span>
-      <div class="flex-1 h-px" style="background:#bbb;"></div>
-      <span class="text-[10px]" style="color:#bbb;">3 papers</span>
+      <span class="text-[10px] font-medium tracking-widest uppercase whitespace-nowrap text-stone-400 dark:text-stone-600">Working Papers</span>
+      <div class="flex-1 h-px bg-stone-200 dark:bg-stone-800"></div>
+      <span class="text-[10px] text-stone-300 dark:text-stone-700">3 papers</span>
     </div>
 
     <!-- Paper: Filling the Gaps -->
-    <div class="py-5 border-b" style="border-color:#eee;">
+    <div class="py-5 border-b border-stone-100 dark:border-stone-800/60">
       <div class="flex gap-4">
-        <div class="w-[3px] shrink-0 rounded-sm mt-1" style="background:#1D9E75;"></div>
+        <div class="w-[3px] shrink-0 rounded-sm mt-1" style="background:#2e7a5c;"></div>
         <div class="min-w-0">
-          <h3 class="text-lg font-normal mb-1" style="font-family: 'Georgia', serif; line-height: 1.4;">
+          <h3 class="text-lg font-normal mb-1 text-stone-800 dark:text-stone-200" style="font-family: 'Georgia', serif; line-height: 1.4;">
             Filling the Gaps? Private Sector Response to the Push and Pull of the Indian Public Schooling System
           </h3>
-          <p class="text-xs mb-3" style="color:#999;">
-            Prerna Dewan, Subhasish Dey, <strong style="color:#333; font-weight:500;">Kasturi Kandalam</strong>, Abhiroop Mukhopadhyay, Soham Sahoo
+          <p class="text-xs mb-3 text-stone-400 dark:text-stone-600">
+            Prerna Dewan, Subhasish Dey,
+            <strong class="font-medium text-stone-700 dark:text-stone-300 px-1 rounded" style="background:rgba(46,122,92,0.10);">Kasturi Kandalam</strong>,
+            Abhiroop Mukhopadhyay, Soham Sahoo
           </p>
           <details class="group mb-3">
-            <summary class="cursor-pointer text-xs flex items-center gap-1.5 w-fit list-none" style="color:#999;">
+            <summary class="cursor-pointer text-xs flex items-center gap-1.5 w-fit list-none text-stone-400 dark:text-stone-600 hover:text-stone-600 dark:hover:text-stone-400 transition-colors">
               <span class="transform transition-transform duration-150 group-open:rotate-90 text-[8px]">▶</span>
               Abstract
             </summary>
-            <p class="mt-3 text-sm leading-relaxed pl-4" style="color:#555; border-left: 1.5px solid #ddd;">
+            <p class="mt-3 text-sm leading-relaxed pl-4 text-stone-500 dark:text-stone-400 border-l border-stone-200 dark:border-stone-700">
               We study how improvements in public school quality shape the evolution of local schooling markets in India.
               Combining district–year ASER test scores with the universe of UDISE administrative data for 2012–2017, we
               document a robust inverted-U relationship between public school quality and private school presence. When
               public schools perform poorly, marginal improvements in public test scores are associated with more private
               school entry — beyond a threshold, the relationship reverses. Private schools that remain in the market
-              invest in more qualified teachers and better infrastructure, consistent with declining demand forcing quality
-              upgrades.
+              invest in more qualified teachers and better infrastructure, consistent with declining demand forcing quality upgrades.
             </p>
           </details>
           <div class="flex items-center gap-3 flex-wrap">
             <div class="flex gap-1.5 flex-wrap flex-1">
-              <span class="text-[10px] px-2 py-0.5 rounded-full" style="background:#f2f2f0; color:#666; border: 0.5px solid #ddd;">Private schools</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full" style="background:#f2f2f0; color:#666; border: 0.5px solid #ddd;">Public schools</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full" style="background:#f2f2f0; color:#666; border: 0.5px solid #ddd;">Education markets</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full text-stone-500 dark:text-stone-500 bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60">Private schools</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full text-stone-500 dark:text-stone-500 bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60">Public schools</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full text-stone-500 dark:text-stone-500 bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60">Education markets</span>
             </div>
             <a href="/kastkan/papers/The_Push_and_Pull_of_Public_Education_Quality.pdf"
-               class="text-xs font-medium shrink-0"
-               style="color:#1D9E75;"
+               class="text-xs font-medium shrink-0 transition-opacity hover:opacity-70"
+               style="color:#2e7a5c;"
                target="_blank" rel="noopener noreferrer">
               Draft PDF →
             </a>
@@ -65,22 +66,22 @@ import PageLayout from "@/layouts/Base.astro";
     </div>
 
     <!-- Paper: Migration -->
-    <div class="py-5 border-b" style="border-color:#eee;">
+    <div class="py-5 border-b border-stone-100 dark:border-stone-800/60">
       <div class="flex gap-4">
-        <div class="w-[3px] shrink-0 rounded-sm mt-1" style="background:#1D9E75;"></div>
+        <div class="w-[3px] shrink-0 rounded-sm mt-1" style="background:#2e7a5c;"></div>
         <div class="min-w-0">
-          <h3 class="text-lg font-normal mb-1" style="font-family: 'Georgia', serif; line-height: 1.4;">
+          <h3 class="text-lg font-normal mb-1 text-stone-800 dark:text-stone-200" style="font-family: 'Georgia', serif; line-height: 1.4;">
             Where Have All the Men Gone? Temporary Migration &amp; Rural Public Works — A Discontinuity Approach
           </h3>
-          <p class="text-xs mb-3" style="color:#999;">
-            <strong style="color:#333; font-weight:500;">Kasturi Kandalam</strong>
+          <p class="text-xs mb-3 text-stone-400 dark:text-stone-600">
+            <strong class="font-medium text-stone-700 dark:text-stone-300 px-1 rounded" style="background:rgba(46,122,92,0.10);">Kasturi Kandalam</strong>
           </p>
           <details class="group mb-3">
-            <summary class="cursor-pointer text-xs flex items-center gap-1.5 w-fit list-none" style="color:#999;">
+            <summary class="cursor-pointer text-xs flex items-center gap-1.5 w-fit list-none text-stone-400 dark:text-stone-600 hover:text-stone-600 dark:hover:text-stone-400 transition-colors">
               <span class="transform transition-transform duration-150 group-open:rotate-90 text-[8px]">▶</span>
               Abstract
             </summary>
-            <p class="mt-3 text-sm leading-relaxed pl-4" style="color:#555; border-left: 1.5px solid #ddd;">
+            <p class="mt-3 text-sm leading-relaxed pl-4 text-stone-500 dark:text-stone-400 border-l border-stone-200 dark:border-stone-700">
               This paper examines the impact of NREGS on temporary migration in India using a fuzzy regression
               discontinuity design that exploits the phased rollout of the program. Drawing on NSS
               Employment–Unemployment Survey data (2007–08), the study finds that NREGS significantly increased
@@ -91,14 +92,14 @@ import PageLayout from "@/layouts/Base.astro";
           </details>
           <div class="flex items-center gap-3 flex-wrap">
             <div class="flex gap-1.5 flex-wrap flex-1">
-              <span class="text-[10px] px-2 py-0.5 rounded-full" style="background:#f2f2f0; color:#666; border: 0.5px solid #ddd;">Migration</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full" style="background:#f2f2f0; color:#666; border: 0.5px solid #ddd;">MGNREGA</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full" style="background:#f2f2f0; color:#666; border: 0.5px solid #ddd;">Fuzzy RDD</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full" style="background:#f2f2f0; color:#666; border: 0.5px solid #ddd;">India</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full text-stone-500 dark:text-stone-500 bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60">Migration</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full text-stone-500 dark:text-stone-500 bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60">MGNREGA</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full text-stone-500 dark:text-stone-500 bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60">Fuzzy RDD</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full text-stone-500 dark:text-stone-500 bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60">India</span>
             </div>
             <a href="/kastkan/papers/migration_nregs_draft.pdf"
-               class="text-xs font-medium shrink-0"
-               style="color:#1D9E75;"
+               class="text-xs font-medium shrink-0 transition-opacity hover:opacity-70"
+               style="color:#2e7a5c;"
                target="_blank" rel="noopener noreferrer">
               Draft PDF →
             </a>
@@ -108,22 +109,22 @@ import PageLayout from "@/layouts/Base.astro";
     </div>
 
     <!-- Paper: Charminar -->
-    <div class="py-5 border-b" style="border-color:#eee;">
+    <div class="py-5 border-b border-stone-100 dark:border-stone-800/60">
       <div class="flex gap-4">
-        <div class="w-[3px] shrink-0 rounded-sm mt-1" style="background:#1D9E75;"></div>
+        <div class="w-[3px] shrink-0 rounded-sm mt-1" style="background:#2e7a5c;"></div>
         <div class="min-w-0">
-          <h3 class="text-lg font-normal mb-1" style="font-family: 'Georgia', serif; line-height: 1.4;">
+          <h3 class="text-lg font-normal mb-1 text-stone-800 dark:text-stone-200" style="font-family: 'Georgia', serif; line-height: 1.4;">
             From Charminar to Cyberabad: Political Economy of Software Industry in Erstwhile Unified Andhra Pradesh
           </h3>
-          <p class="text-xs mb-3" style="color:#999;">
-            <strong style="color:#333; font-weight:500;">Kasturi Kandalam</strong>
+          <p class="text-xs mb-3 text-stone-400 dark:text-stone-600">
+            <strong class="font-medium text-stone-700 dark:text-stone-300 px-1 rounded" style="background:rgba(46,122,92,0.10);">Kasturi Kandalam</strong>
           </p>
           <details class="group mb-3">
-            <summary class="cursor-pointer text-xs flex items-center gap-1.5 w-fit list-none" style="color:#999;">
+            <summary class="cursor-pointer text-xs flex items-center gap-1.5 w-fit list-none text-stone-400 dark:text-stone-600 hover:text-stone-600 dark:hover:text-stone-400 transition-colors">
               <span class="transform transition-transform duration-150 group-open:rotate-90 text-[8px]">▶</span>
               Abstract
             </summary>
-            <p class="mt-3 text-sm leading-relaxed pl-4" style="color:#555; border-left: 1.5px solid #ddd;">
+            <p class="mt-3 text-sm leading-relaxed pl-4 text-stone-500 dark:text-stone-400 border-l border-stone-200 dark:border-stone-700">
               This paper draws on primary qualitative data and secondary quantitative data from erstwhile unified
               Andhra Pradesh to examine how ICT policies at the central and state levels led to a rise in the IT
               ecosystem. Drawing on 45 semi-structured interviews across stakeholders, I adopt a political economy
@@ -133,13 +134,13 @@ import PageLayout from "@/layouts/Base.astro";
           </details>
           <div class="flex items-center gap-3 flex-wrap">
             <div class="flex gap-1.5 flex-wrap flex-1">
-              <span class="text-[10px] px-2 py-0.5 rounded-full" style="background:#f2f2f0; color:#666; border: 0.5px solid #ddd;">IT Industry</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full" style="background:#f2f2f0; color:#666; border: 0.5px solid #ddd;">State Reforms</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full" style="background:#f2f2f0; color:#666; border: 0.5px solid #ddd;">Andhra Pradesh</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full text-stone-500 dark:text-stone-500 bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60">IT Industry</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full text-stone-500 dark:text-stone-500 bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60">State Reforms</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full text-stone-500 dark:text-stone-500 bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60">Andhra Pradesh</span>
             </div>
             <a href="/kastkan/papers/software_industry_ap_draft.pdf"
-               class="text-xs font-medium shrink-0"
-               style="color:#1D9E75;"
+               class="text-xs font-medium shrink-0 transition-opacity hover:opacity-70"
+               style="color:#2e7a5c;"
                target="_blank" rel="noopener noreferrer">
               Draft PDF →
             </a>
@@ -150,63 +151,64 @@ import PageLayout from "@/layouts/Base.astro";
 
     <!-- ── Work in Progress ───────────────────────────── -->
     <div class="flex items-center gap-3 mb-6 mt-12">
-      <span class="text-[10px] font-medium tracking-widest uppercase whitespace-nowrap" style="color:#999;">Work in Progress</span>
-      <div class="flex-1 h-px" style="background:#ddd;"></div>
-      <span class="text-[10px]" style="color:#bbb;">2 projects</span>
+      <span class="text-[10px] font-medium tracking-widest uppercase whitespace-nowrap text-stone-400 dark:text-stone-600">Work in Progress</span>
+      <div class="flex-1 h-px bg-stone-200 dark:bg-stone-800"></div>
+      <span class="text-[10px] text-stone-300 dark:text-stone-700">2 projects</span>
     </div>
 
     <!-- WIP: Meghalaya -->
-    <div class="py-5 border-b" style="border-color:#eee;">
+    <div class="py-5 border-b border-stone-100 dark:border-stone-800/60">
       <div class="flex gap-4">
-        <div class="w-[3px] shrink-0 rounded-sm mt-1" style="background:#B4B2A9;"></div>
+        <div class="w-[3px] shrink-0 rounded-sm mt-1 bg-stone-300 dark:bg-stone-700"></div>
         <div class="min-w-0">
-          <h3 class="text-lg font-normal mb-1" style="font-family: 'Georgia', serif; line-height: 1.4;">
+          <h3 class="text-lg font-normal mb-1 text-stone-800 dark:text-stone-200" style="font-family: 'Georgia', serif; line-height: 1.4;">
             Gender, Geography, and Healthcare Utilization: Evidence from Insurance Claims in Meghalaya
           </h3>
-          <p class="text-xs mb-2" style="color:#999;">
-            <strong style="color:#333; font-weight:500;">Kasturi Kandalam</strong>
+          <p class="text-xs mb-2 text-stone-400 dark:text-stone-600">
+            <strong class="font-medium text-stone-700 dark:text-stone-300 px-1 rounded" style="background:rgba(46,122,92,0.10);">Kasturi Kandalam</strong>
           </p>
-          <span class="text-[10px] font-medium tracking-wide uppercase px-2 py-0.5 rounded-full" style="background:#f2f2f0; color:#888;">Analysis in progress</span>
+          <span class="text-[10px] font-medium tracking-wide uppercase px-2 py-0.5 rounded-full text-stone-400 dark:text-stone-600 bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60">Analysis in progress</span>
         </div>
       </div>
     </div>
 
     <!-- WIP: Who Knows Best -->
-    <div class="py-5 border-b" style="border-color:#eee;">
+    <div class="py-5 border-b border-stone-100 dark:border-stone-800/60">
       <div class="flex gap-4">
-        <div class="w-[3px] shrink-0 rounded-sm mt-1" style="background:#B4B2A9;"></div>
+        <div class="w-[3px] shrink-0 rounded-sm mt-1 bg-stone-300 dark:bg-stone-700"></div>
         <div class="min-w-0">
-          <h3 class="text-lg font-normal mb-1" style="font-family: 'Georgia', serif; line-height: 1.4;">
+          <h3 class="text-lg font-normal mb-1 text-stone-800 dark:text-stone-200" style="font-family: 'Georgia', serif; line-height: 1.4;">
             Who Knows Best? (Dis)agreement on Reported Participation of Women in Intra-Household Decision-Making
           </h3>
-          <p class="text-xs mb-2" style="color:#999;">
-            <strong style="color:#333; font-weight:500;">Kasturi Kandalam</strong> and Rosa Abraham
+          <p class="text-xs mb-2 text-stone-400 dark:text-stone-600">
+            <strong class="font-medium text-stone-700 dark:text-stone-300 px-1 rounded" style="background:rgba(46,122,92,0.10);">Kasturi Kandalam</strong>
+            and Rosa Abraham
           </p>
-          <span class="text-[10px] font-medium tracking-wide uppercase px-2 py-0.5 rounded-full" style="background:#f2f2f0; color:#888;">Analysis in progress</span>
+          <span class="text-[10px] font-medium tracking-wide uppercase px-2 py-0.5 rounded-full text-stone-400 dark:text-stone-600 bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60">Analysis in progress</span>
         </div>
       </div>
     </div>
 
     <!-- ── Academic Writing ───────────────────────────── -->
     <div class="flex items-center gap-3 mb-6 mt-12">
-      <span class="text-[10px] font-medium tracking-widest uppercase whitespace-nowrap" style="color:#999;">Academic Writing</span>
-      <div class="flex-1 h-px" style="background:#ddd;"></div>
+      <span class="text-[10px] font-medium tracking-widest uppercase whitespace-nowrap text-stone-400 dark:text-stone-600">Academic Writing</span>
+      <div class="flex-1 h-px bg-stone-200 dark:bg-stone-800"></div>
     </div>
 
-    <div class="py-5 border-b" style="border-color:#eee;">
+    <div class="py-5 border-b border-stone-100 dark:border-stone-800/60">
       <div class="flex gap-4">
-        <div class="w-[3px] shrink-0 rounded-sm mt-1" style="background:#7F77DD;"></div>
+        <div class="w-[3px] shrink-0 rounded-sm mt-1" style="background:#6a65b0;"></div>
         <div class="min-w-0">
-          <h3 class="text-lg font-normal mb-1" style="font-family: 'Georgia', serif; line-height: 1.4;">
+          <h3 class="text-lg font-normal mb-1 text-stone-800 dark:text-stone-200" style="font-family: 'Georgia', serif; line-height: 1.4;">
             Shadow Banking in India: Nature, Trends, Concerns, and Policy Interventions
           </h3>
-          <p class="text-sm mb-2" style="color:#666;">
+          <p class="text-sm mb-2 text-stone-500 dark:text-stone-500">
             Kandalam, K., Sivramkrishna, S., Gune, S. &amp; Moharir, A. (2019).
             <em>Review of Economic and Business Studies (REBS)</em>, pp. 29–46.
           </p>
           <a href="http://rebs.feaa.uaic.ro/articles/pdfs/272.pdf"
-             class="text-xs font-medium"
-             style="color:#7F77DD;"
+             class="text-xs font-medium transition-opacity hover:opacity-70"
+             style="color:#6a65b0;"
              target="_blank" rel="noopener noreferrer">
             View publication →
           </a>
@@ -216,22 +218,22 @@ import PageLayout from "@/layouts/Base.astro";
 
     <!-- ── Other Writing ──────────────────────────────── -->
     <div class="flex items-center gap-3 mb-6 mt-12">
-      <span class="text-[10px] font-medium tracking-widest uppercase whitespace-nowrap" style="color:#999;">Other Writing</span>
-      <div class="flex-1 h-px" style="background:#ddd;"></div>
+      <span class="text-[10px] font-medium tracking-widest uppercase whitespace-nowrap text-stone-400 dark:text-stone-600">Other Writing</span>
+      <div class="flex-1 h-px bg-stone-200 dark:bg-stone-800"></div>
     </div>
 
-    <div class="py-5 border-b" style="border-color:#eee;">
+    <div class="py-5 border-b border-stone-100 dark:border-stone-800/60">
       <div class="flex gap-4">
-        <div class="w-[3px] shrink-0 rounded-sm mt-1" style="background:#888780;"></div>
+        <div class="w-[3px] shrink-0 rounded-sm mt-1 bg-stone-300 dark:bg-stone-600"></div>
         <div class="min-w-0">
-          <h3 class="text-lg font-normal mb-1" style="font-family: 'Georgia', serif; line-height: 1.4;">
+          <h3 class="text-lg font-normal mb-1 text-stone-800 dark:text-stone-200" style="font-family: 'Georgia', serif; line-height: 1.4;">
             There Are No Toilets in This Colony
           </h3>
-          <p class="text-sm mb-2" style="color:#666;">
+          <p class="text-sm mb-2 text-stone-500 dark:text-stone-500">
             Kandalam, K. &amp; Nakum, K. (2023). <em>People's Archive of Rural India (PARI)</em>.
           </p>
           <a href="https://ruralindiaonline.org/te/articles/there-are-no-toilets-in-this-colony/"
-             class="text-xs font-medium" style="color:#999;"
+             class="text-xs font-medium text-stone-400 dark:text-stone-600 hover:text-stone-600 dark:hover:text-stone-400 transition-colors"
              target="_blank" rel="noopener noreferrer">
             Read article →
           </a>
@@ -241,17 +243,17 @@ import PageLayout from "@/layouts/Base.astro";
 
     <div class="py-5">
       <div class="flex gap-4">
-        <div class="w-[3px] shrink-0 rounded-sm mt-1" style="background:#888780;"></div>
+        <div class="w-[3px] shrink-0 rounded-sm mt-1 bg-stone-300 dark:bg-stone-600"></div>
         <div class="min-w-0">
-          <h3 class="text-lg font-normal mb-1" style="font-family: 'Georgia', serif; line-height: 1.4;">
+          <h3 class="text-lg font-normal mb-1 text-stone-800 dark:text-stone-200" style="font-family: 'Georgia', serif; line-height: 1.4;">
             Comparing Husband's and Wife's Perceptions of Women's Decision-Making Role
           </h3>
-          <p class="text-sm mb-2" style="color:#666;">
+          <p class="text-sm mb-2 text-stone-500 dark:text-stone-500">
             Kandalam, K. (2023). <em>State of Working India: Social Identities and Labour Market Outcomes</em>, p. 191.
             Centre for Sustainable Employment (CSE).
           </p>
           <a href="https://publications.azimpremjiuniversity.edu.in/5166/1/State_of_Working_India_2023_ebook_revised.pdf"
-             class="text-xs font-medium" style="color:#999;"
+             class="text-xs font-medium text-stone-400 dark:text-stone-600 hover:text-stone-600 dark:hover:text-stone-400 transition-colors"
              target="_blank" rel="noopener noreferrer">
             Read article →
           </a>
