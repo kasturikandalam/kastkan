@@ -4,66 +4,115 @@ import PageLayout from "@/layouts/Base.astro";
 ---
 
 <PageLayout meta={{ title: "Home" }}>
-	<section>
-		<h1 class="title mb-4">Hey!</h1>
-		<p class="mb-3">
-			I am a Research Assistant at <a href="https://sites.google.com/site/ppruisid/planning-and-policy-research-unit?authuser=0" class="text-accent hover:text-accent/80 transition-colors underline decoration-accent/50 hover:decoration-accent" target="_blank" rel="noopener noreferrer">Indian Statistical Institute - Delhi (ISI-D)</a>. The breadth of my research covers how social institutions and access to public services shape individual agency and life outcomes. I build and work with large-scale administrative and spatial datasets to uncover patterns that are often invisible at the aggregate level. I enjoy the technical challenges of data work as much as the conceptual puzzles embedded in real-world behaviour.
-		</p>
-		 
-		<p class="mb-3">
-			I hold a Master's and a Bachelor's in Economics (Honours) from <a href="https://azimpremjiuniversity.edu.in/economics" class="text-accent hover:text-accent/80 transition-colors underline decoration-accent/50 hover:decoration-accent" target="_blank" rel="noopener noreferrer">Azim Premji University</a>. Previously, I worked for <a href="https://books.core-econ.org/insights/informality-and-the-capitalist-economy/00-highlights.html" class="text-accent hover:text-accent/80 transition-colors underline decoration-accent/50 hover:decoration-accent" target="_blank" rel="noopener noreferrer">CORE Economics Education</a>, <a href="https://cse.azimpremjiuniversity.edu.in/" class="text-accent hover:text-accent/80 transition-colors underline decoration-accent/50 hover:decoration-accent" target="_blank" rel="noopener noreferrer">Centre for Sustainable Employment</a>, and <a href="https://thedocs.worldbank.org/en/doc/771211575476485169-0090022019/render/DEJURENov2019.pdf" class="text-accent hover:text-accent/80 transition-colors underline decoration-accent/50 hover:decoration-accent" target="_blank" rel="noopener noreferrer">DE JURE, DIME at The World Bank</a>, where I contributed to projects on labour markets, social protection, and pedagogy in economics.
-		</p>
+  <section>
 
-		<p class="mb-3">
-			 If you'd like to collaborate or have questions about my research, please reach out via email: <a href="mailto:kasturiveemohan@gmail.com" class="text-accent hover:text-accent/80 transition-colors underline decoration-accent/50 hover:decoration-accent">kasturiveemohan@gmail.com</a>
-		</p>
-		
-		<SocialList />
-	</section>
+    <!-- Name + role -->
+    <p class="text-[10px] font-medium tracking-widest uppercase text-stone-400 dark:text-stone-500 mb-1">
+      Research Assistant · ISI Delhi
+    </p>
+    <h1 class="title mb-1" style="font-weight: 400; font-size: 1.9rem; letter-spacing: -0.3px;">
+      Kasturi Kandalam
+    </h1>
+    <p class="text-sm text-stone-400 dark:text-stone-500 mb-4 tracking-wide">
+      Development Economics &nbsp;·&nbsp; Labour Markets &nbsp;·&nbsp; Gender &nbsp;·&nbsp; Public Policy
+    </p>
 
-	<section class="mt-12">
-		<h2 class="title mb-6 text-2xl">Recent Work</h2>
-		<div class="space-y-4">
-			<article class="border border-gray-700 rounded-lg p-6 hover:border-accent transition-colors">
-				<h3 class="text-xl font-semibold mb-3">
-					<a href="https://github.com/kasturikandalam/osrm-travel-times" 
-					   class="hover:text-accent transition-colors" 
-					   target="_blank" 
-					   rel="noopener noreferrer">
-						OSRM Travel Time Tools →
-					</a>
-				</h3>
-				<p class="text-base mb-3 leading-relaxed">
-					Lightweight Python tools for computing road-network travel times and distances using the Open Source Routing Machine API. Supports both many-to-many accessibility matrices and pairwise origin-destination calculations—useful for measuring market access, migration costs, and spatial accessibility in development research.
-				</p>
-				<div class="flex flex-wrap gap-2">
-					<span class="text-xs px-2 py-1 rounded" style="background-color: rgba(100, 143, 216, 0.2); color: #648fd8;">API Integration</span>
-					<span class="text-xs px-2 py-1 rounded" style="background-color: rgba(100, 143, 216, 0.2); color: #648fd8;">Spatial Data</span>
-					<span class="text-xs px-2 py-1 rounded" style="background-color: rgba(100, 143, 216, 0.2); color: #648fd8;">Python</span>
-					<span class="text-xs px-2 py-1 rounded" style="background-color: rgba(100, 143, 216, 0.2); color: #648fd8;">Research Tools</span>
-				</div>
-			</article>
+    <!-- Field tags -->
+    <div class="flex flex-wrap gap-1.5 mb-5">
+      <span class="text-[11px] px-2.5 py-0.5 rounded-full border border-stone-200 dark:border-stone-800 text-stone-500 dark:text-stone-500">Administrative data</span>
+      <span class="text-[11px] px-2.5 py-0.5 rounded-full border border-stone-200 dark:border-stone-800 text-stone-500 dark:text-stone-500">Spatial analysis</span>
+      <span class="text-[11px] px-2.5 py-0.5 rounded-full border border-stone-200 dark:border-stone-800 text-stone-500 dark:text-stone-500">Regression discontinuity</span>
+      <span class="text-[11px] px-2.5 py-0.5 rounded-full border border-stone-200 dark:border-stone-800 text-stone-500 dark:text-stone-500">Mixed methods</span>
+      <span class="text-[11px] px-2.5 py-0.5 rounded-full border border-stone-200 dark:border-stone-800 text-stone-500 dark:text-stone-500">South Asia</span>
+    </div>
 
-			<!-- Template for future work - duplicate and uncomment when ready -->
-			<!-- 
-			<article class="border border-gray-700 rounded-lg p-6 hover:border-accent transition-colors">
-				<h3 class="text-xl font-semibold mb-3">
-					<a href="your-link-here" 
-					   class="hover:text-accent transition-colors" 
-					   target="_blank" 
-					   rel="noopener noreferrer">
-						Your Next Project Title →
-					</a>
-				</h3>
-				<p class="text-base mb-3 leading-relaxed">
-					Description of your next project...
-				</p>
-				<div class="flex flex-wrap gap-2">
-					<span class="text-xs px-2 py-1 rounded" style="background-color: rgba(100, 143, 216, 0.2); color: #648fd8;">Skill 1</span>
-					<span class="text-xs px-2 py-1 rounded" style="background-color: rgba(100, 143, 216, 0.2); color: #648fd8;">Skill 2</span>
-				</div>
-			</article>
-			-->
-		</div>
-	</section>
+    <div class="h-px bg-stone-100 dark:bg-stone-800/60 mb-5"></div>
+
+    <!-- Bio -->
+    <p class="mb-3 text-[15px] leading-relaxed text-stone-600 dark:text-stone-400">
+      I study how social institutions and access to public services shape individual agency and life outcomes,
+      working with large-scale administrative and spatial data to surface patterns invisible at the aggregate level.
+      My current work at <a href="https://sites.google.com/site/ppruisid/planning-and-policy-research-unit?authuser=0"
+        class="text-accent hover:opacity-75 transition-opacity underline decoration-accent/40"
+        target="_blank" rel="noopener noreferrer">Indian Statistical Institute – Delhi</a>
+      spans gendered healthcare access, rural public works, and education market dynamics.
+    </p>
+
+    <p class="mb-5 text-[15px] leading-relaxed text-stone-600 dark:text-stone-400">
+      I hold an M.A. and B.A. in Economics (Hons) from <a href="https://azimpremjiuniversity.edu.in/economics"
+        class="text-accent hover:opacity-75 transition-opacity underline decoration-accent/40"
+        target="_blank" rel="noopener noreferrer">Azim Premji University</a>.
+      Previously I worked for <a href="https://books.core-econ.org/insights/informality-and-the-capitalist-economy/00-highlights.html"
+        class="text-accent hover:opacity-75 transition-opacity underline decoration-accent/40"
+        target="_blank" rel="noopener noreferrer">CORE Economics Education</a>,
+      <a href="https://cse.azimpremjiuniversity.edu.in/"
+        class="text-accent hover:opacity-75 transition-opacity underline decoration-accent/40"
+        target="_blank" rel="noopener noreferrer">Centre for Sustainable Employment</a>, and
+      <a href="https://thedocs.worldbank.org/en/doc/771211575476485169-0090022019/render/DEJURENov2019.pdf"
+        class="text-accent hover:opacity-75 transition-opacity underline decoration-accent/40"
+        target="_blank" rel="noopener noreferrer">DE JURE, DIME at The World Bank</a> —
+      contributing to projects on labour markets, social protection, and pedagogy in economics.
+    </p>
+
+    <!-- Contact + social -->
+    <div class="flex items-center gap-2 flex-wrap text-sm mb-2">
+      <a href="mailto:kasturiveemohan@gmail.com"
+         class="text-accent font-medium hover:opacity-75 transition-opacity text-[13px]">
+        kasturiveemohan@gmail.com
+      </a>
+    </div>
+    <SocialList />
+
+  </section>
+
+  <!-- Recent Work -->
+  <section class="mt-8">
+
+    <div class="flex items-center gap-3 mb-4">
+      <span class="text-[10px] font-medium tracking-widest uppercase whitespace-nowrap text-stone-400 dark:text-stone-400">Recent work</span>
+      <div class="flex-1 h-px bg-stone-100 dark:bg-stone-800/60"></div>
+    </div>
+
+    <div class="space-y-3">
+      <article class="border border-stone-200 dark:border-stone-800/60 rounded-lg p-4 hover:border-stone-300 dark:hover:border-stone-700 transition-colors">
+        <h3 class="mb-1.5" style="font-weight: 400; font-size: 1rem; line-height: 1.4;">
+          <a href="https://github.com/kasturikandalam/osrm-travel-times"
+             class="text-stone-800 dark:text-amber-50 hover:text-accent dark:hover:text-accent transition-colors"
+             target="_blank" rel="noopener noreferrer">
+            OSRM Travel Time Tools <span class="text-accent">→</span>
+          </a>
+        </h3>
+        <p class="text-[13px] leading-relaxed text-stone-500 dark:text-stone-500 mb-2.5">
+          Lightweight Python tools for computing road-network travel times and distances using the Open Source
+          Routing Machine API — supporting many-to-many accessibility matrices and pairwise
+          origin-destination calculations for development research.
+        </p>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="text-[10px] px-2 py-0.5 rounded-full bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60 text-stone-500 dark:text-stone-500">Python</span>
+          <span class="text-[10px] px-2 py-0.5 rounded-full bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60 text-stone-500 dark:text-stone-500">Spatial data</span>
+          <span class="text-[10px] px-2 py-0.5 rounded-full bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60 text-stone-500 dark:text-stone-500">API integration</span>
+          <span class="text-[10px] px-2 py-0.5 rounded-full bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60 text-stone-500 dark:text-stone-500">Research tools</span>
+        </div>
+      </article>
+
+      <!-- Template for future work — duplicate and uncomment when ready
+      <article class="border border-stone-200 dark:border-stone-800/60 rounded-lg p-4 hover:border-stone-300 dark:hover:border-stone-700 transition-colors">
+        <h3 class="mb-1.5" style="font-weight: 400; font-size: 1rem; line-height: 1.4;">
+          <a href="your-link-here"
+             class="text-stone-800 dark:text-amber-50 hover:text-accent dark:hover:text-accent transition-colors"
+             target="_blank" rel="noopener noreferrer">
+            Your Next Project <span class="text-accent">→</span>
+          </a>
+        </h3>
+        <p class="text-[13px] leading-relaxed text-stone-500 dark:text-stone-500 mb-2.5">
+          Description here.
+        </p>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="text-[10px] px-2 py-0.5 rounded-full bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60 text-stone-500 dark:text-stone-500">Tag</span>
+        </div>
+      </article>
+      -->
+    </div>
+
+  </section>
 </PageLayout>
