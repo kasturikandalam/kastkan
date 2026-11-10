@@ -3,7 +3,7 @@ import type { AstroExpressiveCodeOptions } from "astro-expressive-code";
 
 export const siteConfig: SiteConfig = {
 	// Change this to your name
-	author: "Kasturi Kandalam",
+	author: "Yathi Rajavalli Kasturi Kandalam",
 	
 	date: {
 		locale: "en-GB",
@@ -15,12 +15,12 @@ export const siteConfig: SiteConfig = {
 	},
 	
 	// Change this to your description
-	description: "I am Kasturi Kandalam, a Pre-Doc at Indian Statistical Institute - Delhi (ISI-D). I study how data, policy and people interact— sometimes beautifully, sometimes not. I build and analyse large administrative and spatial datasets and use them to understand how the world works. p.s. I have a soft spot for messy data.", 
+	description: "I am Yathi Rajavalli Kasturi Kandalam (Kasturi Kandalam in print), a Pre-Doc at Indian Statistical Institute - Delhi (ISI-D). I study how data, policy and people interact— sometimes beautifully, sometimes not. I build and analyse large administrative and spatial datasets and use them to understand how the world works. p.s. I have a soft spot for messy data.", 
 	lang: "en-GB",
 	ogLocale: "en_GB",
 	
 	// Change this to your name/site title
-	title: "Kasturi Kandalam",
+	title: "Yathi Rajavalli Kasturi Kandalam",
 	
 	// IMPORTANT: Change this to your GitHub Pages URL
 	url: "https://kasturikandalam.github.io/kastkan/",
