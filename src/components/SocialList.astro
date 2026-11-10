@@ -4,9 +4,16 @@ import { Icon } from "astro-icon/components";
 const socialLinks: {
 	friendlyName: string;
 	isWebmention?: boolean;
+	isEmail?: boolean;
 	link: string;
 	name: string;
 }[] = [
+	{
+		friendlyName: "Email",
+		isEmail: true,
+		link: "mailto:kasturi.kandalam@gmail.com",
+		name: "mdi:email",
+	},
 	{
 		friendlyName: "Github",
 		link: "https://github.com/kasturikandalam",
@@ -23,13 +30,14 @@ const socialLinks: {
 <div class="flex flex-wrap items-end gap-x-4 sm:gap-x-8">
 	<p>Find me on</p>
 	<ul class="flex flex-1 items-center gap-x-4 sm:flex-initial">
-		{socialLinks.map(({ friendlyName, isWebmention, link, name }) => (
+		{socialLinks.map(({ friendlyName, isEmail, isWebmention, link, name }) => (
 			<li class="flex">
 				<a
 					class="hover:text-link inline-block"
 					href={link}
-					rel={`noreferrer ${isWebmention ? "me authn" : ""}`}
-					target="_blank"
+					rel={isEmail ? undefined : `noreferrer ${isWebmention ? "me authn" : ""}`}
+					target={isEmail ? undefined : "_blank"}
+					title={friendlyName}
 				>
 					<Icon class="h-6 w-6" name={name} />
 					<span class="sr-only">{friendlyName}</span>
