@@ -11,25 +11,15 @@ const { articleDate, description, ogImage, title } = Astro.props;
 const titleSeparator = "•";
 const siteTitle = `${title} ${titleSeparator} ${siteConfig.title}`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url).href;
+const socialImageURL = new URL(ogImage ? ogImage : "/kastkan/social-card.png", Astro.url).href;
 ---
 
 <meta charset="utf-8" />
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 <title>{siteTitle}</title>
 
-{/* Icons */}
-<link href="/kastkan/scatter-icon.svg" rel="icon" type="image/svg+xml" />{
-	import.meta.env.PROD && (
-		<>
-			{/* Favicon & Apple Icon */}
-			<link rel="icon" href="/favicon-32x32.png" type="image/png" />
-			<link href="/icons/apple-touch-icon.png" rel="apple-touch-icon" />
-			{/* Manifest */}
-			<link href="/manifest.webmanifest" rel="manifest" />
-		</>
-	)
-}
+{/* Icon */}
+<link href="/kastkan/scatter-icon.svg" rel="icon" type="image/svg+xml" />
 
 {/* Canonical URL */}
 <link href={canonicalURL} rel="canonical" />
@@ -66,11 +56,7 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 <meta content={socialImageURL} property="twitter:image" />
 
 {/* Sitemap */}
-<link href="/sitemap-index.xml" rel="sitemap" />
-
-{/* RSS auto-discovery */}
-<link href="/rss.xml" title="Blog" rel="alternate" type="application/rss+xml" />
-<link href="/notes/rss.xml" title="Notes" rel="alternate" type="application/rss+xml" />
+<link href="/kastkan/sitemap-index.xml" rel="sitemap" />
 
 {/* Webmentions */}
 {

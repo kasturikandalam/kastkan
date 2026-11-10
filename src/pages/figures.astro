@@ -18,7 +18,7 @@ import PageLayout from "@/layouts/Base.astro";
 				Think of it as a small, evolving gallery of economics.
 			</p>
 			<p class="text-sm text-gray-500 text-center mt-6 italic">
-	               Last Updated: February 2026
+	               Last Updated: November 2026
              </p>
 		</div>
 
@@ -39,7 +39,7 @@ import PageLayout from "@/layouts/Base.astro";
                 class="w-full rounded-lg shadow-lg"
             />
             <p class="text-sm italic mt-2" style="color: #888;">
-                My replication (above) & Figure 2 from Sarsons et al. (2021): Relationship between Paper Composition and Tenure, by Gender
+                Figure 2 from Sarsons et al. (2021) (left) & my replication (right): Relationship between Paper Composition and Tenure, by Gender
             </p>
         </div>
         <div class="space-y-4 text-base">
@@ -53,14 +53,13 @@ import PageLayout from "@/layouts/Base.astro";
                 and institution, year, and field fixed effects.
             </p>
             <p>
-                <strong>Why this matters:</strong> For men, paper composition is essentially irrelevant — tenure rates are flat 
-                regardless of whether they coauthor or solo author (β = −0.035, SE = 0.059). For women, the 
-                relationship is strongly positive (β = 0.406, SE = 0.131): women who solo author all their papers 
-                have tenure rates comparable to men, while women who coauthor all their papers face an 
-                approximately 37% tenure rate — far below that of comparable men. The paper argues this gap 
-                is best explained by gender influencing credit attribution for coauthored work: when individual 
-                contributions are unobservable, employers appear to systematically discount women's share of 
-                joint output relative to men's.
+                <strong>Why this matters:</strong> For men, paper composition is essentially irrelevant: the fitted line is flat,
+                so tenure rates are similar whether they coauthor or solo author. For women, the relationship is strongly positive:
+                the larger the share of solo-authored papers, the higher the tenure rate. The paper reports slopes of 0.514
+                (SE = 0.154) for women and −0.013 (SE = 0.069) for men (N = 613); my replication gives 0.406 (SE = 0.131) and
+                −0.035 (SE = 0.059). The paper argues that this gap is best explained by gender influencing credit attribution
+                for coauthored work: when individual contributions are unobservable, employers appear to systematically discount
+                women's share of joint output relative to men's.
             </p>
             <p class="text-sm" style="color: #648fd8;">
                 <strong>Source:</strong> Replication of Figure 2 from Sarsons, H., Gërxhani, K., Reuben, E., & Schram, A. (2021). 
@@ -68,7 +67,7 @@ import PageLayout from "@/layouts/Base.astro";
             </p>
             <div class="flex gap-4 text-sm">
                 <a href="https://www.journals.uchicago.edu/doi/10.1086/711401" class="text-accent hover:underline" target="_blank">Original Paper</a>
-                <a href="#https://github.com/kasturikandalam/sarsons_replication" class="text-accent hover:underline" target="_blank">My Code & Data</a>
+                <a href="https://github.com/kasturikandalam/sarsons_replication" class="text-accent hover:underline" target="_blank" rel="noopener noreferrer">My Code & Data</a>
             </div>
         </div>
     </div>
@@ -108,7 +107,7 @@ import PageLayout from "@/layouts/Base.astro";
 							<strong>Source:</strong> Replication of Figure 2 from Zimmermann, L. V. (2024). Why guarantee employment? Evidence from a large Indian public-works program. Economic Development and Cultural Change, 72(4), 2031-2067.
 						</p>
 						<div class="flex gap-4 text-sm">
-							<a href="https://www.aeaweb.org/conference/2015/retrieve.php?pdfid=2907&tk=TkiyG3R8" class="text-accent hover:underline" target="_blank" rel="noopener noreferrer">Original Paper</a>
+							<a href="https://doi.org/10.1086/726251" class="text-accent hover:underline" target="_blank" rel="noopener noreferrer">Original Paper</a>
 							<a href="https://github.com/kasturikandalam/nregs-migration" class="text-accent hover:underline" target="_blank" rel="noopener noreferrer">My Code & Data</a>
 						</div>
 					</div>
