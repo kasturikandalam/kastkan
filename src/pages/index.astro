@@ -13,20 +13,9 @@ import PageLayout from "@/layouts/Base.astro";
     <p class="text-xs font-medium tracking-widest uppercase text-stone-400 dark:text-stone-500 mb-2">
       Pre-Doc · ISI Delhi
     </p>
-    <p class="text-base text-stone-500 dark:text-stone-400 mb-4 tracking-wide">
+    <p class="text-base text-stone-500 dark:text-stone-400 mb-6 tracking-wide">
       Development Economics &nbsp;·&nbsp; Labour Markets &nbsp;·&nbsp; Gender &nbsp;·&nbsp; Public Policy
     </p>
-
-    <!-- Field tags -->
-    <div class="flex flex-wrap gap-1.5 mb-5">
-      <span class="text-[11px] px-2.5 py-0.5 rounded-full border border-stone-200 dark:border-stone-800 text-stone-500 dark:text-stone-500">Administrative data</span>
-      <span class="text-[11px] px-2.5 py-0.5 rounded-full border border-stone-200 dark:border-stone-800 text-stone-500 dark:text-stone-500">Spatial analysis</span>
-      <span class="text-[11px] px-2.5 py-0.5 rounded-full border border-stone-200 dark:border-stone-800 text-stone-500 dark:text-stone-500">Regression discontinuity</span>
-      <span class="text-[11px] px-2.5 py-0.5 rounded-full border border-stone-200 dark:border-stone-800 text-stone-500 dark:text-stone-500">Mixed methods</span>
-      <span class="text-[11px] px-2.5 py-0.5 rounded-full border border-stone-200 dark:border-stone-800 text-stone-500 dark:text-stone-500">South Asia</span>
-    </div>
-
-    <div class="h-px bg-stone-100 dark:bg-stone-800/60 mb-5"></div>
 
     <!-- Bio -->
     <p class="mb-3 text-[15px] leading-relaxed text-stone-600 dark:text-stone-400">
@@ -61,6 +50,18 @@ import PageLayout from "@/layouts/Base.astro";
         target="_blank" rel="noopener noreferrer">DE JURE, DIME at the World Bank</a>.
       I publish as Kasturi Kandalam.
     </p>
+
+    <!-- Research tags -->
+    <div class="flex flex-wrap gap-1.5 mb-6">
+      <span class="text-[11px] px-2.5 py-0.5 rounded-full border border-stone-200 dark:border-stone-700 text-stone-500 dark:text-stone-400">Administrative data</span>
+      <span class="text-[11px] px-2.5 py-0.5 rounded-full border border-stone-200 dark:border-stone-700 text-stone-500 dark:text-stone-400">Geospatial analysis</span>
+      <span class="text-[11px] px-2.5 py-0.5 rounded-full border border-stone-200 dark:border-stone-700 text-stone-500 dark:text-stone-400">Health insurance</span>
+      <span class="text-[11px] px-2.5 py-0.5 rounded-full border border-stone-200 dark:border-stone-700 text-stone-500 dark:text-stone-400">Education markets</span>
+      <span class="text-[11px] px-2.5 py-0.5 rounded-full border border-stone-200 dark:border-stone-700 text-stone-500 dark:text-stone-400">Rural public works</span>
+      <span class="text-[11px] px-2.5 py-0.5 rounded-full border border-stone-200 dark:border-stone-700 text-stone-500 dark:text-stone-400">Regression discontinuity</span>
+      <span class="text-[11px] px-2.5 py-0.5 rounded-full border border-stone-200 dark:border-stone-700 text-stone-500 dark:text-stone-400">Gender</span>
+      <span class="text-[11px] px-2.5 py-0.5 rounded-full border border-stone-200 dark:border-stone-700 text-stone-500 dark:text-stone-400">Political economy</span>
+    </div>
 
     <!-- Contact + social -->
     <div class="flex items-center gap-2 flex-wrap text-sm mb-2">
@@ -108,6 +109,37 @@ import PageLayout from "@/layouts/Base.astro";
            class="text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors">
           All research →
         </a>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- Code and tools -->
+  <section class="mt-8">
+
+    <div class="flex items-center gap-3 mb-4">
+      <span class="text-[10px] font-medium tracking-widest uppercase whitespace-nowrap text-stone-400 dark:text-stone-400">Code and tools</span>
+      <div class="flex-1 h-px bg-stone-100 dark:bg-stone-800/60"></div>
+    </div>
+
+    <article class="border border-stone-200 dark:border-stone-800/60 rounded-lg p-4 hover:border-stone-300 dark:hover:border-stone-700 transition-colors">
+      <h3 class="mb-1.5" style="font-weight: 400; font-size: 1rem; line-height: 1.4;">
+        <a href="https://github.com/kasturikandalam/osrm-travel-times"
+           class="text-stone-800 dark:text-amber-50 hover:text-accent dark:hover:text-accent transition-colors"
+           target="_blank" rel="noopener noreferrer">
+          OSRM Travel Time Tools <span class="text-accent">→</span>
+        </a>
+      </h3>
+      <p class="text-[13px] leading-relaxed text-stone-500 dark:text-stone-400 mb-2.5">
+        Lightweight Python tools for computing road-network travel times and distances using the Open Source
+        Routing Machine API, supporting many-to-many accessibility matrices and pairwise
+        origin-destination calculations for development research.
+      </p>
+      <div class="flex flex-wrap gap-1.5">
+        <span class="text-[10px] px-2 py-0.5 rounded-full bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60 text-stone-500 dark:text-stone-500">Python</span>
+        <span class="text-[10px] px-2 py-0.5 rounded-full bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60 text-stone-500 dark:text-stone-500">Spatial data</span>
+        <span class="text-[10px] px-2 py-0.5 rounded-full bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60 text-stone-500 dark:text-stone-500">API integration</span>
+        <span class="text-[10px] px-2 py-0.5 rounded-full bg-stone-100 dark:bg-stone-800/80 border border-stone-200 dark:border-stone-700/60 text-stone-500 dark:text-stone-500">Research tools</span>
       </div>
     </article>
 
